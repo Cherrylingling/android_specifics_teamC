@@ -1,4 +1,6 @@
 [versions]
+accompanistPermissions = "0.30.1"
+accompanistPermissionsVersion = "0.31.1-alpha"
 agp = "8.3.1"
 kotlin = "1.9.0"
 coreKtx = "1.13.1"
@@ -10,6 +12,9 @@ activityCompose = "1.9.0"
 composeBom = "2023.08.00"
 
 [libraries]
+accompanist-permission = { module = "com.google.accompanist:accompanist-permission", version.ref = "accompanistPermissions" }
+accompanist-permissions = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanistPermissions" }
+accompanist-permissions-v0311alpha = { module = "com.google.accompanist:accompanist-permissions", version.ref = "accompanistPermissionsVersion" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
